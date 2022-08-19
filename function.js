@@ -6,7 +6,7 @@ submitBtn.addEventListener('click', function(){
     const pValue = passValue.value;
     
     if(eValue == 'amar' && pValue == 123456){
-        window.open("withdrow.html");
+        window.open("withdrow.html", "_self");
     }
     else{
         alert('Error: Incorrect Password');

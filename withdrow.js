@@ -1,3 +1,7 @@
+document.getElementById("btnHome").onclick = function () {
+    location.href = "./index.html";
+};
+
 document.getElementById('btn-withdrow').addEventListener('click', function(){
     const widthdrawInput = document.getElementById('withdrow-input');
     const withdrawValue = widthdrawInput.value;
