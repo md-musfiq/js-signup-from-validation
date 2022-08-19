@@ -6,10 +6,10 @@ submitBtn.addEventListener('click', function(){
     const pValue = passValue.value;
     
     if(eValue == 'amar' && pValue == 123456){
-        console.log('Valid user')
+        window.open("withdrow.html");
     }
     else{
-        console.log('Invalid User')
+        alert('Error: Incorrect Password');
     }
 
 } )

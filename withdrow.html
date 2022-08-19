@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From field</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="my-4 text-3xl font-bold bg-gray-300 text-center py-2">Withdrow money to our <span class="text-yellow-600">Bank service.</span></h1>
+
+    <div class="bg-sky-300 w-3/4 m-auto p-2 rounded">
+        <h1 class="my-4 text-3xl font-semibold text-yellow-700 text-center">Choice your part from here.</h1>
+        <div class="p-2 grid grid-cols-3 gap-3 text-white">
+            <div class="bg-green-700 rounded p-2 font-semibold">
+                <h1 class="my-4 text-2xl font-semibold">Diposite</h1>
+                <p class="text-4xl">$ <span id="diposit-amount">00</span></p>
+            </div>
+            <div class="bg-red-400 rounded p-2 font-semibold">
+                <h1 class="my-4 text-2xl font-semibold">Withdrow</h1>
+                <p class="text-4xl">$ <span id="withdrow-amount">00</span></p>
+            </div>
+            <div class="bg-lime-600 rounded p-2 font-semibold">
+                <h1 class="my-4 text-2xl font-semibold">Balance</h1>
+                <p class="text-4xl">$ <span id="total-balance">1450</span></p>
+            </div>
+        </div>
+
+        <div class="mt-12 p-2 grid grid-cols-2 gap-3 text-white">
+            <div class="bg-green-700 rounded p-2 font-semibold">
+                <h1 class="my-4 text-2xl font-semibold">Please Diposite</h1>
+                <input class="rounded w-3/4 block px-2 my-3 text-gray-800" type="text" name="" id="diposit-input" placeholder="$ amount you want to Diposite">
+                <button class="bg-green-500 rounded-md text-white font-semibold py-1 px-4 mb-4" id="btn-diposit">Diposite</button>
+            </div>
+            <div class="bg-red-400 rounded p-2 font-semibold">
+                <h1 class="my-4 text-2xl font-semibold">Please Withdrow</h1>
+                <input class="rounded w-3/4 block px-2 my-3 text-gray-800" type="text" name="" id="withdrow-input" placeholder="$ amount you want to Withdrow">
+                <button class="bg-green-500 rounded-md text-white font-semibold py-1 px-4 mb-4" id="btn-withdrow">Withdrow</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./diposite.js"></script>
+    <script src="./withdrow.js"></script>
+</body>
+
+</html>
